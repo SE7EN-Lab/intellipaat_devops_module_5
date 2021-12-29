@@ -1,4 +1,11 @@
 #### Ansible hands-on
+
+| Type | Host Name | OS    |
+| :--: | :---:     | :---: |
+| Ansible Master | ec2-65-2-73-231.ap-south-1.compute.amazonaws.com | Amazon Linux 2 |
+| Ansible slave-1 | ec2-65-0-71-50.ap-south-1.compute.amazonaws.com | Amazon Linux 2 |
+| Ansible slave-2 | ec2-3-108-64-248.ap-south-1.compute.amazonaws.com | Amazon Linux 2 |
+
 1. Ansible version on master
 ```
 [ec2-user@ip-172-31-15-156 ansible]$ ansible --version
