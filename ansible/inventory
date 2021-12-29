@@ -1,0 +1,4 @@
+[apache_servers]
+ec2-65-0-71-50.ap-south-1.compute.amazonaws.com ansible_user=ec2-user
+[nginx_servers]
+ec2-3-108-64-248.ap-south-1.compute.amazonaws.com ansible_user=ec2-user

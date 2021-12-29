@@ -1,0 +1,11 @@
+---
+- hosts: apache_servers
+  user: ec2-user
+  become: true 
+  roles: 
+    - web
+- hosts: nginx_servers
+  user: ec2-user
+  become: true
+  roles:
+    - web-ng

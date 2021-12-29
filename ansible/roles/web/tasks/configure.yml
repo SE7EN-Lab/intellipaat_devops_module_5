@@ -1,0 +1,6 @@
+---
+- name: configure webpage
+  template:
+    src: templates/home.html.j2
+    dest: /var/www/html/home.html
+  notify: restart server 

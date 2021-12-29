@@ -1,0 +1,26 @@
+---
+ - name: Add nginx repo #Explicitly configured for AL2
+   yum_repository:
+     name: nginx
+     baseurl: "https://nginx.org/packages/rhel/7/$basearch"
+     description: "Official NGINX Repo"
+     enabled: yes
+     gpgcheck: yes
+     gpgkey: https://nginx.org/keys/nginx_signing.key
+     mode: 0644
+
+ - name: install nginx
+   yum:
+     name: nginx
+     state: present
+     disablerepo: "*"
+     enablerepo: nginx
+     update_cache: yes
+
+ - name: install java
+   yum:
+     name: java-1.8.0-openjdk
+     state: present
+ - name: show java version
+   command: java -version 
+
